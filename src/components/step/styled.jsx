@@ -26,10 +26,12 @@ import styled from 'styled-components'
  export const GoBackButton = styled.button`
     font-size: 14px;
     color: var(--cool-gray);
+    margin-right: auto;
  `;
  export const GoNextButton = styled.button`
-    background-color: var(--marine-blue);
-    color: var(--white);
-    padding: 12px 24px;
-    border-radius: 8px;
+   background-color: var(--marine-blue);
+   color: var(--white);
+   padding: 12px 24px;
+   border-radius: 8px;
+   margin-left: auto;
  `;

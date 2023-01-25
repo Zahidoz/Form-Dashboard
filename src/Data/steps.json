@@ -1,90 +1,83 @@
-[
-  {
-    "step1": [
-      {
-        "id": "name",
-        "label": "Name",
-        "type": "text",
-        "placeholder": "Enter your name"
-      },
-      {
-        "id": "email-adress",
-        "label": "Email Adress",
-        "type": "mail", 
-        "placeholder": "example username@gmail.com"
-      },
-      {
-        "id": "phone-number",
-        "label": "Phone Number",
-        "type": "tel",
-        "placeholder": "example +994 50 703 37 33"
-      }
-    ]
-  },
-  {
-    "step2": [
-      {
-        "id": "name",
-        "label": "Name",
-        "type": "text",
-        "placeholder": "Enter your name"
-      },
-      {
-        "id": "email-adress",
-        "label": "Email Adress",
-        "type": "mail",
-        "placeholder": "example username@gmail.com"
-      },
-      {
-        "id": "phone-number",
-        "label": "Phone Number",
-        "type": "tel",
-        "placeholder": "example +994 50 703 37 33"
-      }
-    ]
-  },
-  {
-    "step3": [
-      {
-        "id": "name",
-        "label": "Name",
-        "type": "text",
-        "placeholder": "Enter your name"
-      },
-      {
-        "id": "email-adress",
-        "label": "Email Adress",
-        "type": "mail",
-        "placeholder": "example username@gmail.com"
-      },
-      {
-        "id": "phone-number",
-        "label": "Phone Number",
-        "type": "tel",
-        "placeholder": "example +994 50 703 37 33"
-      }
-    ]
-  },
-  {
-    "step4": [
-      {
-        "id": "name",
-        "label": "Name",
-        "type": "text",
-        "placeholder": "Enter your name"
-      },
-      {
-        "id": "email-adress",
-        "label": "Email Adress",
-        "type": "mail",
-        "placeholder": "example username@gmail.com"
-      },
-      {
-        "id": "phone-number",
-        "label": "Phone Number",
-        "type": "tel",
-        "placeholder": "example +994 50 703 37 33"
-      }
-    ]
-  }
-]
+{
+  "step1": [
+    {
+      "id": "name",
+      "label": "Name",
+      "type": "text",
+      "placeholder": "Enter your name"
+    },
+    {
+      "id": "email-adress",
+      "label": "Email Adress",
+      "type": "mail",
+      "placeholder": "example username@gmail.com"
+    },
+    {
+      "id": "phone-number",
+      "label": "Phone Number",
+      "type": "tel",
+      "placeholder": "example +994 50 703 37 33"
+    }
+  ],
+
+  "step2": [
+    {
+      "id": "name",
+      "label": "Name",
+      "type": "text",
+      "placeholder": "Enter your name"
+    },
+    {
+      "id": "email-adress",
+      "label": "Email Adress",
+      "type": "mail",
+      "placeholder": "example username@gmail.com"
+    },
+    {
+      "id": "phone-number",
+      "label": "Phone Number",
+      "type": "tel",
+      "placeholder": "example +994 50 703 37 33"
+    }
+  ],
+  "step3": [
+    {
+      "id": "name",
+      "label": "Name",
+      "type": "text",
+      "placeholder": "Enter your name"
+    },
+    {
+      "id": "email-adress",
+      "label": "Email Adress",
+      "type": "mail",
+      "placeholder": "example username@gmail.com"
+    },
+    {
+      "id": "phone-number",
+      "label": "Phone Number",
+      "type": "tel",
+      "placeholder": "example +994 50 703 37 33"
+    }
+  ],
+  "step4": [
+    {
+      "id": "name",
+      "label": "Name",
+      "type": "text",
+      "placeholder": "Enter your name"
+    },
+    {
+      "id": "email-adress",
+      "label": "Email Adress",
+      "type": "mail",
+      "placeholder": "example username@gmail.com"
+    },
+    {
+      "id": "phone-number",
+      "label": "Phone Number",
+      "type": "tel",
+      "placeholder": "example +994 50 703 37 33"
+    }
+  ]
+}

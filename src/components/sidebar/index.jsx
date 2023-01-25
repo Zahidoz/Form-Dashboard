@@ -3,13 +3,13 @@ import * as S from './styled'
 import sidebarSteps from "../../Data/sidebar.json";
 
 
-const Sidebar = () => {
+const Sidebar = ({activeStep}) => {
   return (
     <S.Sidebar>
       {
         sidebarSteps.map(step=>{
           return (
-            <S.Item key={step.id}>
+            <S.Item key={step.id} isActive={activeStep === step.id}>
               <S.ItemNumber>{step.number}</S.ItemNumber>
               <S.ItemBody>
                 <S.SubTitle>{step.title}</S.SubTitle>

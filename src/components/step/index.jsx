@@ -2,20 +2,20 @@ import React from 'react'
 import * as S from "./styled";
 
 
-const Step = () => {
+const Step = ({ title, subTitle, hasBackBtn, hasNextBtn, children }) => {
   return (
     <S.Step>
       <S.StepHeader>
-        <S.HeaderTitle>Title</S.HeaderTitle>
-        <S.HeaderSubTitle>SubTitle</S.HeaderSubTitle>
+        <S.HeaderTitle>{title}</S.HeaderTitle>
+        <S.HeaderSubTitle>{subTitle}</S.HeaderSubTitle>
       </S.StepHeader>
-      <S.Body>Body</S.Body>
+      <S.Body>{children}</S.Body>
       <S.Footer>
-        <S.GoBackButton>Back</S.GoBackButton>
-        <S.GoNextButton>Next</S.GoNextButton>
+        {hasBackBtn && <S.GoBackButton>Back</S.GoBackButton>}
+        {hasNextBtn && <S.GoNextButton>Next</S.GoNextButton>}
       </S.Footer>
     </S.Step>
   );
-}
+};
 
 export default Step; 

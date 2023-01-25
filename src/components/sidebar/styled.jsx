@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled , {css} from "styled-components";
 import sidebarImg from "../../assets/images/bg-sidebar-desktop.svg";
 
 export const Sidebar = styled.div`
@@ -14,13 +14,6 @@ export const Sidebar = styled.div`
   color: #fff;
   padding: 24px;
 `;
-
-export const Item = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 8px;
-`;
-
 export const ItemNumber = styled.span`
   border: 1px solid var(--white);
   color: var(--white);
@@ -31,6 +24,22 @@ export const ItemNumber = styled.span`
   width: 32px;
   height: 32px;
 `;
+
+export const Item = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  ${ItemNumber} {
+    ${({ isActive }) =>
+      isActive === true &&
+      css`
+        background-color: var(--magnolia);
+        color: var(--marine-blue);
+      `}
+  }
+`;
+
+
 export const ItemBody = styled.div`
 `;
 
@@ -40,8 +49,8 @@ export const SubTitle = styled.h5`
 `;
 
 export const Title = styled.h2`
-    font-weight:600;
+    font-weight:500;
     letter-spacing: .6px;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
 `;
