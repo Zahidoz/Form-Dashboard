@@ -68,44 +68,49 @@
       }
     ]
   },
-  "step3": [
-    {
-      "id": "name",
-      "label": "Name",
-      "type": "text",
-      "placeholder": "Enter your name"
-    },
-    {
-      "id": "email-adress",
-      "label": "Email Adress",
-      "type": "mail",
-      "placeholder": "example username@gmail.com"
-    },
-    {
-      "id": "phone-number",
-      "label": "Phone Number",
-      "type": "tel",
-      "placeholder": "example +994 50 703 37 33"
-    }
-  ],
+  "step3": {
+    "monthly": [
+      {
+        "id": 1,
+        "title": "Online Service",
+        "subTitle": "Access to multiple games",
+        "price": "+1$/mo"
+      },
+      {
+        "id": 2,
+        "title": "Larger Storage",
+        "subTitle": "Extra 1Tb of clout save",
+        "price": "+2$/mo"
+      },
+      {
+        "id": 3,
+        "title": "Customizable Profile",
+        "subTitle": "Custom theme on your profile",
+        "price": "+2$/mo"
+      }
+    ],
+    "yearly": [
+      {
+        "id": 1,
+        "title": "Online Service",
+        "subTitle": "Access to multiple games",
+        "price": "+10$/mo"
+      },
+      {
+        "id": 2,
+        "title": "Larger Storage",
+        "subTitle": "Extra 1Tb of clout save",
+        "price": "+20$/mo"
+      },
+      {
+        "id": 3,
+        "title": "Customizable Profile",
+        "subTitle": "Custom theme on your profile",
+        "price": "+20$/mo"
+      }
+    ]
+  },
   "step4": [
-    {
-      "id": "name",
-      "label": "Name",
-      "type": "text",
-      "placeholder": "Enter your name"
-    },
-    {
-      "id": "email-adress",
-      "label": "Email Adress",
-      "type": "mail",
-      "placeholder": "example username@gmail.com"
-    },
-    {
-      "id": "phone-number",
-      "label": "Phone Number",
-      "type": "tel",
-      "placeholder": "example +994 50 703 37 33"
-    }
+   
   ]
 }

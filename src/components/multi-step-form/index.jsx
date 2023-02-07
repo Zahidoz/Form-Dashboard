@@ -5,9 +5,8 @@ import Step2 from '../step-2';
 import Step3 from '../step-3';
 import Step4 from "../step-4";
 
-import * as S from './styled';
+import * as S from './styled';  
 
-const MultiStepForm = () => {
   const Steps = {
     step1: {
       component: Step1,
@@ -37,12 +36,31 @@ const MultiStepForm = () => {
     },
   };
 
-  const [active,setActive] = useState('step2');
+const MultiStepForm = () => {
+
+  const [formData, setFormData] = useState({
+    step1: {},
+    step2: {},
+    step3: {},
+  });
+
+  const [active,setActive] = useState('step1');
   const ActiveStep = Steps[active].component;
+
+  const handleStepSubmit = (stepId,nextStep,stepData) =>{
+    setFormData({
+      ...formData,
+      [stepId]:stepData
+    })
+    setActive(nextStep)
+  }
+ 
+  console.log(formData)
+
   return (
     <S.MultiStepForm>
       <Sidebar activeStep={active} />
-      <ActiveStep {...Steps[active]} />
+      <ActiveStep {...Steps[active]} onStepSubmit={handleStepSubmit} />
     </S.MultiStepForm>
   );
 }

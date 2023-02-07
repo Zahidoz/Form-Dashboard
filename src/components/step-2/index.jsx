@@ -15,8 +15,7 @@ import { useState } from "react";
 
 const { step2 } = FormJson;
 
-const Step2 = (props) => {
-  
+const Step2 = ({ onStepSubmit, ...props }) => {
   const [billingType, setBillingType] = useState(DEAFAULT_BILLING_TYPE);
   const [plan, setPlan] = useState(DEAFAULT_PLAN);
 
@@ -27,16 +26,22 @@ const Step2 = (props) => {
     setBillingType(newBilling);
   };
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+ 
+    onStepSubmit("step2", "step3", {billingType,plan});
+  };
+
   return (
-    <Step {...props}>
+    <Step {...props} handleSubmit={onSubmit}>
       <S.Step2>
         <S.RadioGroup>
           {step2[billingType].map((item) => (
-            <S.RadioLabel key={item.id} isSelected={item.id === plan}>
+            <S.RadioLabel key={item.id} isSelected={item.id === plan.id}>
               <S.RadioInput
                 type="radio"
                 name="plan-type"
-                onChange={() => changePlan(item.id)}
+                onChange={() => changePlan(item)}
               ></S.RadioInput>
               <S.Icon src={Icons[item.id]} />
               <S.Title>{item.title}</S.Title>

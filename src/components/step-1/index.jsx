@@ -3,11 +3,19 @@ import * as S from "./styled";
 import Step from "../step";
 import apis from "../../Data/steps.json";
 
-const Step1 = (props) => {
-  const { step1 } = apis;
+const Step1 = ({onStepSubmit,...props}) => {
+  const { step1 } = apis; 
   const hasError = false
+
+  const onSubmit = (e) => {
+    e.preventDefault()
+    const data = new FormData(e.target)
+    const formProperties = Object.fromEntries(data);
+    onStepSubmit("step1","step2", formProperties);
+  }
+
   return (
-    <Step {...props}>
+    <Step {...props} handleSubmit={onSubmit}>
       <S.Step1>
         {step1.map((item) => {
           return (

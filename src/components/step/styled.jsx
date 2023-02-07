@@ -5,7 +5,7 @@ import styled from 'styled-components'
     flex-direction: column;
     gap: 24px;
     padding: 24px;
-    flex: 1;
+    flex: 1; 
  `;
  export const StepHeader = styled.header``;
  export const HeaderTitle = styled.h2`
