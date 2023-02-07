@@ -6,7 +6,7 @@ import {
   Icons,
   DEAFAULT_PLAN,
   DEAFAULT_BILLING_TYPE,
-  MONTHLY,
+  MONTHLY, 
   YEARLY
 } from "./constants"
 

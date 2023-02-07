@@ -2,7 +2,7 @@ import React from 'react'
 import * as S from "./styled";
 
 
-const Step = ({ handleSubmit, title, subTitle, hasBackBtn, hasNextBtn, children }) => {
+const Step = ({ goBack, handleSubmit, title, subTitle, hasBackBtn, hasNextBtn, children }) => {
   return (
     <S.Step onSubmit={handleSubmit}> 
       <S.StepHeader>
@@ -11,7 +11,7 @@ const Step = ({ handleSubmit, title, subTitle, hasBackBtn, hasNextBtn, children 
       </S.StepHeader>
       <S.Body>{children}</S.Body>
       <S.Footer>
-        {hasBackBtn && <S.GoBackButton>Back</S.GoBackButton>}
+        {hasBackBtn && <S.GoBackButton type='button' onClick={goBack}>Back</S.GoBackButton>}
         {hasNextBtn && <S.GoNextButton type="submit">Next</S.GoNextButton>}
       </S.Footer>
     </S.Step>

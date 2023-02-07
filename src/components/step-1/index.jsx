@@ -3,7 +3,7 @@ import * as S from "./styled";
 import Step from "../step";
 import apis from "../../Data/steps.json";
 
-const Step1 = ({onStepSubmit,...props}) => {
+const Step1 = ({onStepSubmit,formData,...props}) => {
   const { step1 } = apis; 
   const hasError = false
 
@@ -22,6 +22,7 @@ const Step1 = ({onStepSubmit,...props}) => {
             <S.FormItem hasError={hasError} key={item.id}>
               <S.Label htmlFor={item.id}>{item.label}</S.Label>
               <S.Input
+                defaultValue={formData.step1[item.id]}
                 name={item.id}
                 id={item.id}
                 type={item.type}

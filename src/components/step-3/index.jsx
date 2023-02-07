@@ -5,8 +5,8 @@ import api from "../../Data/steps.json";
 
 const { step3 } = api;
 
-const Step3 = (props) => {
-  const MONTHLY = "monthly";
+const Step3 = ({ onStepSubmit, formData, ...props }) => {
+  const {billingType} =formData.step2;
   const [selectedAddons, setSelectedAddons] = useState([]);
 
   const changeSelectedAddons = (checked, selectedItem) => {
@@ -18,17 +18,19 @@ const Step3 = (props) => {
       );
     }
   };
-  const checkSelected = (id) => selectedAddons.some((arr) => arr.id === id)
+  const checkSelected = (id) => selectedAddons.some((arr) => arr.id === id);
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+    
+    onStepSubmit("step3", "step4", selectedAddons);
+  };
 
   return (
-    <Step {...props}>
+    <Step {...props} handleSubmit={onSubmit}>
       <S.Step3>
-        {step3[MONTHLY].map((item) => (
-          <S.Item
-            key={item.id}
-            isSelected={checkSelected(item.id)}
-          >
+        {step3[billingType].map((item) => (
+          <S.Item key={item.id} isSelected={checkSelected(item.id)}>
             <S.Input
               onChange={(e) => changeSelectedAddons(e.target.checked, item)}
               type="checkbox"

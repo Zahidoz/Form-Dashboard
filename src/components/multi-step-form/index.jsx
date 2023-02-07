@@ -57,10 +57,20 @@ const MultiStepForm = () => {
  
   console.log(formData)
 
+  const handleBack = () => {
+    const currentStepNumber = Number(active.slice(-1));
+    setActive(`step${currentStepNumber - 1}`);
+  }
+
   return (
     <S.MultiStepForm>
       <Sidebar activeStep={active} />
-      <ActiveStep {...Steps[active]} onStepSubmit={handleStepSubmit} />
+      <ActiveStep
+        {...Steps[active]}
+        onStepSubmit={handleStepSubmit}
+        goBack={handleBack}
+        formData={formData}
+      />
     </S.MultiStepForm>
   );
 }
