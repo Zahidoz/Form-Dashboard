@@ -1,0 +1,111 @@
+{
+  "step1": [
+    {
+      "id": "name",
+      "label": "Name",
+      "type": "text",
+      "placeholder": "Enter your name"
+    },
+    {
+      "id": "email-adress",
+      "label": "Email Adress",
+      "type": "mail",
+      "placeholder": "example username@gmail.com"
+    },
+    {
+      "id": "phone-number",
+      "label": "Phone Number",
+      "type": "tel",
+      "placeholder": "example +994 50 703 37 33"
+    }
+  ],
+
+  "step2": {
+    "monthly": [
+      {
+        "id": 1,
+        "title": "Arcade",
+        "price": "9$/month",
+        "priceAmount": "15"
+      },
+      {
+        "id": 2,
+        "title": "Advanced",
+        "price": "12$/month",
+        "priceAmount": "15"
+      },
+      {
+        "id": 3,
+        "title": "Pro",
+        "price": "15$/month",
+        "priceAmount": "15"
+      }
+    ],
+    "yearly": [
+      {
+        "id": 1,
+        "icon": "icon-arcade.svg",
+        "title": "Arcade",
+        "price": "90$/year",
+        "description": "2month free",
+        "priceAmount": 120
+      },
+      {
+        "id": 2,
+        "icon": "icon-advanced.svg",
+        "title": "Advanced",
+        "price": "120$/year",
+        "description":"2month free",
+        "priceAmount": 120
+      },
+      {
+        "id": 3,
+        "icon": "icon-pro.svg",
+        "title": "Pro",
+        "price": "150$/year",
+        "description": "2month free",
+        "priceAmount": 120
+      }
+    ]
+  },
+  "step3": [
+    {
+      "id": "name",
+      "label": "Name",
+      "type": "text",
+      "placeholder": "Enter your name"
+    },
+    {
+      "id": "email-adress",
+      "label": "Email Adress",
+      "type": "mail",
+      "placeholder": "example username@gmail.com"
+    },
+    {
+      "id": "phone-number",
+      "label": "Phone Number",
+      "type": "tel",
+      "placeholder": "example +994 50 703 37 33"
+    }
+  ],
+  "step4": [
+    {
+      "id": "name",
+      "label": "Name",
+      "type": "text",
+      "placeholder": "Enter your name"
+    },
+    {
+      "id": "email-adress",
+      "label": "Email Adress",
+      "type": "mail",
+      "placeholder": "example username@gmail.com"
+    },
+    {
+      "id": "phone-number",
+      "label": "Phone Number",
+      "type": "tel",
+      "placeholder": "example +994 50 703 37 33"
+    }
+  ]
+}
